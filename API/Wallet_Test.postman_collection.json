@@ -72,53 +72,7 @@
 			},
 			"response": []
 		},
-		{
-			"name": "Create Address ",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "3cf36e61-935a-4cdc-a213-d0c89c019445",
-						"exec": [
-							"let responseJson;\r",
-							"pm.test (\"Check status\", function() {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"wallet_id\": \"BTCvtk3Qe51Xw49MS8StAyEhWBPbSHnpHjxKvQFQCLQZUAggpSnn7\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{url}}/{{currency}}/testnet/v1/create/wallet/payment/address",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"{{currency}}",
-						"testnet",
-						"v1",
-						"create",
-						"wallet",
-						"payment",
-						"address"
-					]
-				}
-			},
-			"response": []
-		},
+		
 		{
 			"name": "Wallet State",
 			"event": [
